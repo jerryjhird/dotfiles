@@ -1,14 +1,5 @@
 #!/bin/bash
 
-username_azfr=$(whoami)
-substring_azfr="noface" 
-
-if [[ "${username,,}" == *"${substring,,}"* ]]; then
-    echo "The username contains '${substring}' (case-insensitive)."
-else
-    exit 1
-fi
-
 if [ -f /etc/os-release ]; then
     . /etc/os-release
     if [[ "$ID" == "ubuntu" ]]; then
@@ -39,6 +30,7 @@ packages=(
     hyprland
     waybar
     swaybg
+    foot
     sddm
     pipewire
     pulsemixer
