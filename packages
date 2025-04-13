@@ -1,0 +1,19 @@
+| !r required |  | !o optional |
+| !d dnf |  | !a apt |  | !u universal |
+
+[all]
+ffmpeg !u !r
+
+[hyprland]
+hyprland !u !r
+swaybg !u !r
+waybar !u !r
+bemenu !u !r
+foot !u !r
+lightdm !u !r
+
+[i3]
+i3 !u !r
+xinit !a !r
+xorg-x11-xinit !d !r
+dmenu !u !r
