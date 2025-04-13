@@ -11,6 +11,7 @@
 python3 !u !o
 ffmpeg !u !o
 pipewire !u !o
+[/all]
 
 [hyprland]
 hyprland !u !r
@@ -20,3 +21,4 @@ bemenu !u !r
 foot !u !r
 lightdm !u !r
 pulsemixer !p !o
+[/hyprland]
