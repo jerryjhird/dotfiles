@@ -1,0 +1,16 @@
+# !r required 
+# !o optional
+
+# !p pip (user only)
+# !u universal (apt, dnf) 
+# NOTE: universal dosent include pip
+
+[hyprland]
+;hyprland !u !r
+;swaybg !u !r
+;waybar !u !r
+;bemenu !u !r
+;foot !u !r
+;lightdm !u !r
+;pulsemixer !p !o
+[/hyprland]
