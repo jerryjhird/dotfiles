@@ -1,6 +1,8 @@
 from shutil import which
 import re, json, subprocess
 
+system_to_install = 'hyprland'
+
 def detect_pm():
     if which('dnf'):
         return 'dnf'
@@ -54,7 +56,7 @@ def parse_system(pkglist_filename, system_name):
         "optional": optional_packages,
     }
 
-data = json.loads(json.dumps(parse_system('test.pkglist','hyprland'), indent=4))
+data = json.loads(json.dumps(parse_system('pkglist',system_to_install), indent=4))
 
 package_req, package_opt = data['required'],data['optional']
 
