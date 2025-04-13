@@ -5,4 +5,4 @@ alias volume='pulsemixer'
 alias run='if [ ! -x "run.sh" ]; then sudo chmod +x run.sh; fi; ./run.sh'
 alias srun='if [ ! -x "run.sh" ]; then sudo chmod +x run.sh; fi; ./run.sh'
 
-fastfetch
+fastfetch --config neofetch
