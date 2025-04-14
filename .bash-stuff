@@ -1,3 +1,4 @@
+alias ls='ls -a --color=auto'
 alias reload='source ~/.bashrc'
 alias snano='sudo nano'
 alias pirate='aria2c --seed-time 0'
