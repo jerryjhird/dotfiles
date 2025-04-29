@@ -5,5 +5,3 @@ alias pirate='aria2c --seed-time 0'
 alias volume='pulsemixer'
 alias run='if [ ! -x "run.sh" ]; then sudo chmod +x run.sh; fi; ./run.sh'
 alias srun='if [ ! -x "run.sh" ]; then sudo chmod +x run.sh; fi; ./run.sh'
-
-fastfetch --config neofetch
