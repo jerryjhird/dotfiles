@@ -66,7 +66,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+b splith
 bindsym $mod+v splitv
 
-bindsym $mod+l exec $lock
 bindsym $mod+Escape exec $power
 bindsym $mod+End exec $wifi
 
@@ -88,13 +87,6 @@ bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 10
 
 # Toggle Redshift
 bindsym $mod+Home exec --no-startup-id pkill -USR1 redshift
-
-# Idle configuration
-exec swayidle \
-    timeout 300 'exec $lock' \
-    timeout 600 'swaymsg "output * dpms off"' \
-    after-resume 'swaymsg "output * dpms on"' \
-    before-sleep 'exec $lock'
 
 # Move your focus around
 bindsym $mod+Left focus left
@@ -165,9 +157,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $mode_system System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown, (R) UEFI
+set $mode_system System: (e) logout, (s) suspend, (r) reboot, (S) shutdown, (R) UEFI
 mode "$mode_system" {
-    bindsym l exec $lock, mode "default"
     bindsym e exit
     bindsym s exec --no-startup-id systemctl suspend, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
