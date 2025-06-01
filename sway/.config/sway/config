@@ -7,7 +7,7 @@ set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused)
 
 set $screenshot grim ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
 set $screenclip slurp | grim -g - ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
-set $background ~/Documents/background.jpg
+set $background ~/.config/sway/background.jpg
 
 set $cl_high #009ddc
 set $cl_indi #d9d8d8
