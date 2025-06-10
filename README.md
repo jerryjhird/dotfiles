@@ -1,4 +1,4 @@
-# Sway Dotfiles
+# SwayFX Dotfiles
 
 > [!IMPORTANT]  
 > The installer only moves the dotfiles, and also this is for swayfx not sway but all swayfx logic is contained at the end of the file and removable without a problem
