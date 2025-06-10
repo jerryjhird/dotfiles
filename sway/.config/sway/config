@@ -7,7 +7,7 @@ set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused)
 
 set $screenshot grim ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
 set $screenclip slurp | grim -g - ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
-set $background ~/.config/sway/background.jpg
+set $background ~/Documents/background.jpg
 
 set $cl_high #009ddc
 set $cl_indi #d9d8d8
@@ -169,4 +169,10 @@ mode "$mode_system" {
 }
 bindsym $mod+Shift+e mode "$mode_system"
 
-include ~/.config/sway/$(hostname)/*
+
+# Swayfx Stuff (remove everything below if you want to use normal sway)
+layer_effects "waybar" blur enable; blur_xray enable; blur_ignore_transparent enable; shadows enable;
+
+smart_corner_radius enable
+corner_radius 15
+default_dim_inactive 0.2
