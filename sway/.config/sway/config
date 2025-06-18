@@ -7,7 +7,7 @@ set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused)
 
 set $screenshot grim ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
 set $screenclip slurp | grim -g - ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
-set $background ~/Documents/background.jpg
+set $background ~/Pictures/sym_wallpaper
 
 set $cl_high #009ddc
 set $cl_indi #d9d8d8
@@ -58,6 +58,9 @@ bindsym $mod+Return exec $term
 bindsym $mod+Print exec $screenshot
 bindsym $mod+Shift+Print exec $screenclip
 bindsym $mod+d exec $menu
+
+# Wallpaper Cycler
+bindsym $mod+w exec ~/.config/sway/scripts/cycle_wallpaper.sh
 
 bindsym $mod+q kill
 bindsym $mod+Shift+c reload
@@ -125,7 +128,6 @@ bindsym $mod+Shift+0    move container to workspace $ws0
 
 # Switch the current container between different layout styles
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # Make the current focus fullscreen
@@ -169,8 +171,6 @@ mode "$mode_system" {
 }
 bindsym $mod+Shift+e mode "$mode_system"
 
-
-# Swayfx Stuff (remove everything below if you want to use normal sway)
 layer_effects "waybar" blur enable; blur_xray enable; blur_ignore_transparent enable; shadows enable;
 
 smart_corner_radius enable
