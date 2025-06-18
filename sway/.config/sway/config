@@ -2,7 +2,6 @@
 set $mod Mod4
 set $term foot
 
-set $menu rofi -m $(expr $(swaymsg -t get_tree | jq '.nodes | map([recurse(.nodes[]?, .floating_nodes[]?) | .focused] | any) | index(true)') - 1) -show drun -run-command 'swaymsg exec -- {cmd}'
 set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused) | index(true)') -show drun -run-command 'swaymsg exec -- {cmd}'
 
 set $screenshot grim ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
@@ -17,6 +16,7 @@ set $cl_urge #ee2e24
 
 # Autostart
 exec waybar
+exec ~/.config/sway/scripts/cycle_wallpaper.sh
 
 # Colors                border   bg       text     indi     childborder
 client.focused          $cl_high $cl_high $cl_fore $cl_indi $cl_high
