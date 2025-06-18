@@ -1,16 +1,21 @@
 # SwayFX Dotfiles
 
-> [!IMPORTANT]  
-> The installer only moves the dotfiles, and also this is for swayfx not sway but all swayfx logic is contained at the end of the file and removable without a problem
+### also contains a zsh config
 
 ![Screenshot](https://github.com/Jerryslang/dotfiles/blob/main/.github/scrn-2025-06-10-22-54-07.png?raw=true)
 
-packages:
-[swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp]
+requirements:
+[swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp zsh-autosuggestions powerlevel10k zsh oh-my-zsh]
 
 ## Included Scripts:
 
 Wallpaper cycler (cycles through wallpapers in the {~/Pictures/Wallpapers} folder)    (must be .jpg or .jpeg)
+
+powerlevel10k https://github.com/romkatv/powerlevel10k
+
+oh-my-zsh https://ohmyz.sh/#install
+
+zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions/
 
 ## Keybinds
 
