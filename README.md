@@ -41,5 +41,6 @@ SUPER+SHIFT+{ARROW_DIRECTION} // Moves current selected application to the speci
 {NUMBER} represents any number from 1 to 9
 
 SUPER+{Number} // Switches to workspace {number}
+
 SUPER+SHIFT+{Number} // moves container to workspace {Number}
 
