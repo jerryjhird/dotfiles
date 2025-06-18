@@ -10,7 +10,7 @@ packages:
 
 ## Included Scripts:
 
-Wallpaper cycler (cycles through wallpapers in the {~/Pictures/Wallpapers} folder)
+Wallpaper cycler (cycles through wallpapers in the {~/Pictures/Wallpapers} folder)    (must be .jpg or .jpeg)
 
 ## Keybinds
 
