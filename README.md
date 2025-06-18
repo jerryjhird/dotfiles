@@ -2,7 +2,7 @@
 
 ### also contains a zsh config
 
-![Screenshot](https://github.com/Jerryslang/dotfiles/blob/main/.github/scrn-2025-06-10-22-54-07.png?raw=true)
+![Screenshot](https://i.imgur.com/K8pOUFt.jpeg)
 
 requirements:
 [swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp zsh-autosuggestions powerlevel10k zsh oh-my-zsh]
