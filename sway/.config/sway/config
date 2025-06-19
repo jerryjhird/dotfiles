@@ -16,7 +16,6 @@ set $cl_urge #ee2e24
 
 # Autostart
 exec waybar
-exec ~/.config/sway/scripts/cycle_wallpaper.sh
 
 # Colors                border   bg       text     indi     childborder
 client.focused          $cl_high $cl_high $cl_fore $cl_indi $cl_high
@@ -147,29 +146,30 @@ bindsym $mod+Shift+minus move scratchpad
 
 bindsym $mod+minus scratchpad show
 
+# Modes
+
 mode "resize" {
     bindsym Left resize shrink width 10px
     bindsym Down resize grow height 10px
     bindsym Up resize shrink height 10px
     bindsym Right resize grow width 10px
 
-    bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
 
-set $mode_system System: (e) logout, (s) suspend, (r) reboot, (S) shutdown, (R) UEFI
-mode "$mode_system" {
-    bindsym e exit
-    bindsym s exec --no-startup-id systemctl suspend, mode "default"
-    bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
-    bindsym Shift+r exec --no-startup-id systemctl reboot --firmware-setup, mode "default"
+mode "application" {
+    bindsym 1 exec $term
+    bindsym 2 exec firefox
+    bindsym 3 exec $menu
+    bindsym 4 exec codium ~/.zshrc
+    bindsym 5 exec codium ~/.config/sway
 
-    bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Shift+e mode "$mode_system"
+
+# Mod + Alt
+bindsym $mod+Mod1+1 mode "resize"
+bindsym $mod+Mod1+2 mode "application"
 
 layer_effects "waybar" blur enable; blur_xray enable; blur_ignore_transparent enable; shadows enable;
 
