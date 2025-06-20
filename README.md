@@ -60,3 +60,9 @@ SUPER+0 // create / switch to workspace with custom name
 
 SUPER+SHIFT+0 // move window to workspace with custom name
 
+## Mode keybinds
+
+Resize Mode $mod+Alt+1
+
+Application Mode $mod+Alt+2
+
