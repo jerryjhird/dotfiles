@@ -50,9 +50,13 @@ SUPER+SHIFT+{ARROW_DIRECTION} // Moves current selected application to the speci
 
 ## Workspace Keybinds
 
-{NUMBER} represents any number from 1 to 9
+"{NUMBER} represents any number from 1 to 9"
 
 SUPER+{Number} // Switches to workspace {number}
 
 SUPER+SHIFT+{Number} // moves container to workspace {Number}
+
+SUPER+0 // create / switch to workspace with custom name
+
+SUPER+SHIFT+0 // move window to workspace with custom name
 
