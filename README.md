@@ -14,6 +14,10 @@ oh-my-zsh-requirements:
 
 Wallpaper cycler (cycles through wallpapers in the {~/Pictures/Wallpapers} folder)    (must be .jpg or .jpeg)
 
+Workspace Prompt (allows the use of custom names or numbers for workspaces using zenity to prompt for them) (unlimited workspaces)
+
+## Zsh Links
+
 powerlevel10k https://github.com/romkatv/powerlevel10k
 
 oh-my-zsh https://ohmyz.sh/#install
