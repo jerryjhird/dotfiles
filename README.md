@@ -5,7 +5,7 @@
 ![Screenshot](https://i.imgur.com/dTmIZn3.jpeg)
 
 requirements:
-[swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp]
+[swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp, zenity]
 
 oh-my-zsh-requirements:
 [zsh-autosuggestions powerlevel10k]
