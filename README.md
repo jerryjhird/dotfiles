@@ -3,6 +3,8 @@
 > [!TIP]
 > if the wallpaper, mod+w or mod+0 / mod+shift+0 arent working after install use Mod+Shift+C
 
+this happens when the scripts arent marked as executable and the wallpaper symlink hasnt been created yet
+
 ### also contains a zsh config
 
 ![Screenshot](https://i.imgur.com/dTmIZn3.jpeg)
