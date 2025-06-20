@@ -1,5 +1,8 @@
 # SwayFX Dotfiles
 
+> [!TIP]
+> if the wallpaper, mod+w or mod+0 / mod+shift+0 arent working after install use Mod+Shift+C
+
 ### also contains a zsh config
 
 ![Screenshot](https://i.imgur.com/dTmIZn3.jpeg)
@@ -9,6 +12,8 @@ requirements:
 
 oh-my-zsh-requirements:
 [zsh-autosuggestions powerlevel10k]
+
+" $mod represents the variable in the sway config file, its set to super by default"
 
 ## Included Scripts:
 
@@ -26,39 +31,39 @@ zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions/
 
 ## Standard Keybinds
 
-SUPER+D // Rofi start menu
+$mod+D // Rofi start menu
 
-SUPER+W // Changes wallpaper to the next wallpaper in the Pictures/Wallpaper Folder
+$mod+W // Changes wallpaper to the next wallpaper in the Pictures/Wallpaper Folder
 
-SUPER+Return // Starts Terminal (foot)
+$mod+Return // Starts Terminal (foot)
 
-SUPER+Q // Quits Selected Application
+$mod+Q // Quits Selected Application
 
-SUPER+SHIFT+E // Quits Sway
+$mod+SHIFT+E // Quits Sway
 
-SUPER+F // Fullscreens current selected application
+$mod+F // Fullscreens current selected application
 
-SUPER+PRINT // Screenshots whole screen
+$mod+PRINT // Screenshots whole screen
 
-SUPER+SHIFT+PRINT // Screenshots region of the screen
+$mod+SHIFT+PRINT // Screenshots region of the screen
 
-SUPER+SHIFT+C // Reloads Sway Config
+$mod+SHIFT+C // Reloads Sway Config and makes the scripts in the scripts folder executable and runs the wallpaper switcher (basically a fix keybind)
 
-SUPER+{ARROW_DIRECTION} // Selects application to the specified direction of current selected application
+$mod+{ARROW_DIRECTION} // Selects application to the specified direction of current selected application
 
-SUPER+SHIFT+{ARROW_DIRECTION} // Moves current selected application to the specified direction
+$mod+SHIFT+{ARROW_DIRECTION} // Moves current selected application to the specified direction
 
 ## Workspace Keybinds
 
-"{NUMBER} represents any number from 1 to 9"
+" {NUMBER} represents any number from 1 to 9"
 
-SUPER+{Number} // Switches to workspace {number}
+$mod+{Number} // Switches to workspace {number}
 
-SUPER+SHIFT+{Number} // moves container to workspace {Number}
+$mod+SHIFT+{Number} // moves container to workspace {Number}
 
-SUPER+0 // create / switch to workspace with custom name
+$mod+0 // create / switch to workspace with custom name
 
-SUPER+SHIFT+0 // move window to workspace with custom name
+$mod+SHIFT+0 // move window to workspace with custom name
 
 ## Mode keybinds
 
