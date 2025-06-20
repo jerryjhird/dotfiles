@@ -33,11 +33,11 @@ zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions/
 
 ## Standard Keybinds
 
-$mod+D // Rofi start menu
+$mod+D // opens $menu (rofi with custom flags)
 
 $mod+W // Changes wallpaper to the next wallpaper in the Pictures/Wallpaper Folder
 
-$mod+Return // Starts Terminal (foot)
+$mod+Return // Starts $term (foot)
 
 $mod+Q // Quits Selected Application
 
