@@ -24,7 +24,7 @@ oh-my-zsh https://ohmyz.sh/#install
 
 zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions/
 
-## Keybinds
+## Standard Keybinds
 
 SUPER+D // Rofi start menu
 
@@ -60,9 +60,30 @@ SUPER+0 // create / switch to workspace with custom name
 
 SUPER+SHIFT+0 // move window to workspace with custom name
 
-## Mode keybinds
+### Mode keybinds
 
-Resize Mode $mod+Alt+1
+## Resize Mode: $mod+Alt+1
 
-Application Mode $mod+Alt+2
+Left Arrow: shrinks window by 10px in width
+
+Down Arrow: grows window by 10px in height
+
+Up Arrow: shrinks window by 10px in height
+
+Right Arrow: grows window by 10px in width
+
+Esc: exits mode
+
+## Application Mode: $mod+Alt+2
+1: opens $term (foot)
+
+2: opens firefox
+
+3: opens $menu (rofi with custom flags)
+
+4: opens codium inside ~/.zshrc
+
+5: opens codium inside ~/.config/sway
+
+Esc: exits mode
 
