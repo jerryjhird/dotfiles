@@ -62,7 +62,7 @@ bindsym $mod+w exec ~/.config/sway/scripts/cycle_wallpaper.sh
 
 bindsym $mod+q kill
 bindsym $mod+Shift+c exec bash -c 'chmod -R +x ~/.config/sway/scripts && ~/.config/sway/scripts/cycle_wallpaper.sh && swaymsg reload'
-#bindsym $mod+Shift+e exit
+bindsym $mod+Shift+e exit
 bindsym $mod+b splith
 bindsym $mod+v splitv
 
