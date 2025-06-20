@@ -60,9 +60,9 @@ SUPER+0 // create / switch to workspace with custom name
 
 SUPER+SHIFT+0 // move window to workspace with custom name
 
-### Mode keybinds
+## Mode keybinds
 
-## Resize Mode: $mod+Alt+1
+### Resize Mode: $mod+Alt+1
 
 Left Arrow: shrinks window by 10px in width
 
@@ -74,7 +74,7 @@ Right Arrow: grows window by 10px in width
 
 Esc: exits mode
 
-## Application Mode: $mod+Alt+2
+### Application Mode: $mod+Alt+2
 1: opens $term (foot)
 
 2: opens firefox
