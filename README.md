@@ -1,7 +1,7 @@
 # SwayFX Dotfiles
 
 > [!TIP]
-> if the wallpaper, mod+w or mod+0 / mod+shift+0 arent working after install use Mod+Shift+C
+> if the wallpaper, mod+w or mod+0 / mod+shift+0 arent working after install use Mod+Shift+C or try using chmod +x on all files in the .config/sway/scripts folder
 
 this happens when the scripts arent marked as executable and the wallpaper symlink hasnt been created yet
 
