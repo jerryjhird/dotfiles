@@ -7,7 +7,7 @@ this happens when the scripts arent marked as executable and the wallpaper symli
 
 ### also contains a zsh config
 
-![Screenshot](https://i.imgur.com/dTmIZn3.jpeg)
+![Screenshot](https://i.imgur.com/2aJUNZz.png)
 
 requirements:
 [swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp, zenity]
