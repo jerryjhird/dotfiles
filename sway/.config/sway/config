@@ -16,6 +16,7 @@ set $cl_urge #ee2e24
 
 # Autostart
 exec waybar
+exec_always mako
 
 # Colors                border   bg       text     indi     childborder
 client.focused          $cl_high $cl_high $cl_fore $cl_indi $cl_high
@@ -61,7 +62,7 @@ bindsym $mod+d exec $menu
 bindsym $mod+w exec ~/.config/sway/scripts/cycle_wallpaper.sh
 
 bindsym $mod+q kill
-bindsym $mod+Shift+c exec bash -c 'chmod -R +x ~/.config/sway/scripts && ~/.config/sway/scripts/cycle_wallpaper.sh && swaymsg reload'
+bindsym $mod+Shift+c exec bash -c 'chmod -R +x ~/.config/sway/scripts && ~/.config/sway/scripts/cycle_wallpaper.sh && sway reload'
 bindsym $mod+Shift+e exit
 bindsym $mod+b splith
 bindsym $mod+v splitv
@@ -169,9 +170,3 @@ mode "application" {
 # Mod + Alt
 bindsym $mod+Mod1+1 mode "resize"
 bindsym $mod+Mod1+2 mode "application"
-
-layer_effects "waybar" blur enable; blur_xray enable; blur_ignore_transparent enable; shadows enable;
-
-smart_corner_radius enable
-corner_radius 15
-default_dim_inactive 0.2
