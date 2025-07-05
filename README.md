@@ -10,7 +10,7 @@ this happens when the scripts arent marked as executable and the wallpaper symli
 ![Screenshot](https://i.imgur.com/2aJUNZz.png)
 
 requirements:
-[swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp, zenity]
+[swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp, zenity mako]
 
 oh-my-zsh-requirements:
 [zsh-autosuggestions powerlevel10k]
