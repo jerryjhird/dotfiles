@@ -1,16 +1,16 @@
-# SwayFX Dotfiles
+# Sway Dotfiles
 
 > [!TIP]
-> if the wallpaper, mod+w or mod+0 / mod+shift+0 arent working after install use Mod+Shift+C or try using chmod +x on all files in the .config/sway/scripts folder
+> if the wallpaper, mod+w or mod+0 / mod+shift+0 arent working after install. try using chmod +x on all files in the .config/sway/scripts folder
 
 this happens when the scripts arent marked as executable and the wallpaper symlink hasnt been created yet
 
 ### also contains a zsh config
 
-![Screenshot](https://i.imgur.com/2aJUNZz.png)
+![Screenshot](https://i.imgur.com/cJcNyCZ.png)
 
 requirements:
-[swayfx waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp, zenity mako]
+[sway waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp, zenity mako]
 
 oh-my-zsh-requirements:
 [zsh-autosuggestions powerlevel10k]
@@ -67,31 +67,4 @@ $mod+SHIFT+{Number} // moves container to workspace {Number}
 $mod+0 // create / switch to workspace with custom name
 
 $mod+SHIFT+0 // move window to workspace with custom name
-
-## Mode keybinds
-
-### Resize Mode: $mod+Alt+1
-
-Left Arrow: shrinks window by 10px in width
-
-Down Arrow: grows window by 10px in height
-
-Up Arrow: shrinks window by 10px in height
-
-Right Arrow: grows window by 10px in width
-
-Esc: exits mode
-
-### Application Mode: $mod+Alt+2
-1: opens $term (foot)
-
-2: opens firefox
-
-3: opens $menu (rofi with custom flags)
-
-4: opens codium inside ~/.zshrc
-
-5: opens codium inside ~/.config/sway
-
-Esc: exits mode
 
