@@ -2,7 +2,7 @@
 set $mod Mod4
 set $term foot
 
-set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused) | index(true)') -show drun -run-command 'swaymsg exec -- {cmd}'
+set $menu wofi --monitor $(swaymsg -t get_outputs | jq -r '.[] | select(.active and .focused) | .name') --show drun --run-command 'swaymsg exec -- {cmd}'
 
 set $screenshot grim ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
 set $screenclip slurp | grim -g - ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
@@ -35,7 +35,7 @@ set $ws7   7
 set $ws8   8
 set $ws9   9
 
-font pango:Hack 11
+font pango:Monocraft Nerd Font 10
 
 # Window borders
 default_border pixel 1
@@ -57,12 +57,13 @@ bindsym $mod+Return exec $term
 bindsym $mod+Print exec $screenshot
 bindsym $mod+Shift+Print exec $screenclip
 bindsym $mod+d exec $menu
+bindsym $mod+Shift+d exec wofi --show run
 
 # Wallpaper Cycler
 bindsym $mod+w exec ~/.config/sway/scripts/cycle_wallpaper.sh
 
 bindsym $mod+q kill
-bindsym $mod+Shift+c exec bash -c 'chmod -R +x ~/.config/sway/scripts && ~/.config/sway/scripts/cycle_wallpaper.sh && sway reload'
+bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exit
 bindsym $mod+b splith
 bindsym $mod+v splitv
@@ -143,30 +144,4 @@ bindsym $mod+a focus parent
 
 # Move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
-
 bindsym $mod+minus scratchpad show
-
-# Modes
-
-mode "resize" {
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
-
-    bindsym Escape mode "default"
-}
-
-mode "application" {
-    bindsym 1 exec $term
-    bindsym 2 exec firefox
-    bindsym 3 exec $menu
-    bindsym 4 exec codium ~/.zshrc
-    bindsym 5 exec codium ~/.config/sway
-
-    bindsym Escape mode "default"
-}
-
-# Mod + Alt
-bindsym $mod+Mod1+1 mode "resize"
-bindsym $mod+Mod1+2 mode "application"
