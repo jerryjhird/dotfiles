@@ -33,7 +33,8 @@ zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions/
 
 ## Standard Keybinds
 
-$mod+D // opens $menu (rofi with custom flags)
+$mod+D // opens $menu (wofi with custom flags)
+$mod+Shift+D // opens wofi in run mode
 
 $mod+W // Changes wallpaper to the next wallpaper in the Pictures/Wallpaper Folder
 
