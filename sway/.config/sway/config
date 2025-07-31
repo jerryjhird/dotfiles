@@ -61,6 +61,7 @@ bindsym $mod+Shift+d exec wofi --show run
 
 # Wallpaper Cycler
 bindsym $mod+w exec ~/.config/sway/scripts/cycle_wallpaper.sh
+bindsym $mod+Shift+w exec ~/.config/sway/scripts/cycle_wallpaper.sh --unsafe
 
 bindsym $mod+q kill
 bindsym $mod+Shift+c reload
