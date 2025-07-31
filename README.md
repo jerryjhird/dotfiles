@@ -68,3 +68,23 @@ $mod+0 // create / switch to workspace with custom name
 
 $mod+SHIFT+0 // move window to workspace with custom name
 
+## wallpapers
+
+wallpapers are handled by a custom script wich allows you to place any wallpaper you want at anytime inside of the ~/Pictures/Wallpapers folder and cycle through them using a keybind
+
+this script has 2 modes for 2 different lists of wallpapers
+
+### the first list
+
+the first list cycles through wallpapers in the before mentioned wallpaper folder
+
+as long as they start with "wp_" for there filenames
+
+### the second list
+
+the second list does the same thing but for flenames starting with "swp_"
+
+(this first list can be cycled through using Mod+W)
+
+(thie second list can be cycled through using Mod+Shift+W)
+
