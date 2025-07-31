@@ -5,15 +5,10 @@
 
 this happens when the scripts arent marked as executable and the wallpaper symlink hasnt been created yet
 
-### also contains a zsh config
-
 ![Screenshot](https://i.imgur.com/cJcNyCZ.png)
 
 requirements:
-[sway waybar rofi xwayland sddm pipewire pipewire-pulseaudio pipewire-alsa fastfetch grim slurp, zenity mako]
-
-oh-my-zsh-requirements:
-[zsh-autosuggestions powerlevel10k]
+[sway waybar rofi xwayland sddm fastfetch grim slurp, zenity mako]
 
 " $mod represents the variable in the sway config file, its set to super by default"
 
@@ -22,14 +17,6 @@ oh-my-zsh-requirements:
 Wallpaper cycler (cycles through wallpapers in the {~/Pictures/Wallpapers} folder)    (must be .jpg or .jpeg)
 
 Workspace Prompt (allows the use of custom names or numbers for workspaces using zenity to prompt for them) (unlimited workspaces)
-
-## Zsh Links
-
-powerlevel10k https://github.com/romkatv/powerlevel10k
-
-oh-my-zsh https://ohmyz.sh/#install
-
-zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions/
 
 ## Standard Keybinds
 
