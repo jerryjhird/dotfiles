@@ -72,7 +72,18 @@ as long as they start with "wp_" for there filenames
 the second list does the same thing but for flenames starting with "swp_"
 
 
-(this first list can be cycled through using Mod+W)
+(the first list can be cycled through using Mod+W)
 
-(thie second list can be cycled through using Mod+Shift+W)
+(the second list can be cycled through using Mod+Shift+W)
+
+### Swaylock
+
+wallpapers for swaylock are handled the same as the desktop with 2 lists seperated by keybinds
+
+`mod+l` for using list 1 wallpapers
+
+`mod+shift+l` for using list 2 wallpapers
+
+it will use whatever desktop is being used on sway at the moment but will only use list 2 wallpapers if you have used the `mod+shift+l` keybind
+
 
