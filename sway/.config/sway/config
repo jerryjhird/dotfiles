@@ -2,7 +2,7 @@
 set $mod Mod4
 set $term foot
 
-set $menu wofi --monitor $(swaymsg -t get_outputs | jq -r '.[] | select(.active and .focused) | .name') --show drun --run-command 'swaymsg exec -- {cmd}'
+set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused) | index(true)') -show drun -run-command 'swaymsg exec -- {cmd}'
 
 set $screenshot grim ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
 set $screenclip slurp | grim -g - ~/Pictures/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
@@ -16,7 +16,6 @@ set $cl_urge #ee2e24
 
 # Autostart
 exec waybar
-exec_always mako
 
 # Colors                border   bg       text     indi     childborder
 client.focused          $cl_high $cl_high $cl_fore $cl_indi $cl_high
@@ -57,14 +56,17 @@ bindsym $mod+Return exec $term
 bindsym $mod+Print exec $screenshot
 bindsym $mod+Shift+Print exec $screenclip
 bindsym $mod+d exec $menu
-bindsym $mod+Shift+d exec wofi --show run
 
-# Wallpaper Cycler
+# Desktop Wallpaper Manager
 bindsym $mod+w exec ~/.config/sway/scripts/cycle_wallpaper.sh
 bindsym $mod+Shift+w exec ~/.config/sway/scripts/cycle_wallpaper.sh --unsafe
 
+# Swaylock Wallpaper Manager
+bindsym $mod+l exec ~/.config/sway/scripts/swaylock_wallpaper_handler.sh
+bindsym $mod+Shift+l exec ~/.config/sway/scripts/swaylock_wallpaper_handler.sh --unsafe # use list 2 wallpapers if they are set already
+
 bindsym $mod+q kill
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+c exec bash -c 'chmod -R +x ~/.config/sway/scripts && ~/.config/sway/scripts/cycle_wallpaper.sh && swaymsg reload'
 bindsym $mod+Shift+e exit
 bindsym $mod+b splith
 bindsym $mod+v splitv
@@ -84,20 +86,13 @@ bindsym --locked XF86AudioPlay exec playerctl play-pause
 bindsym --locked XF86AudioNext exec playerctl next
 bindsym --locked XF86AudioPrev exec playerctl previous
 
-# Brightness controls
-bindsym --locked XF86MonBrightnessUp exec --no-startup-id light -A 10
-bindsym --locked XF86MonBrightnessDown exec --no-startup-id light -U 10
-
-# Toggle Redshift
-bindsym $mod+Home exec --no-startup-id pkill -USR1 redshift
-
 # Move your focus around
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# _move_ the focused window with the same, but add Shift
+# move the focused window in X direction
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -127,22 +122,9 @@ bindsym $mod+Shift+8    move container to workspace $ws8
 bindsym $mod+Shift+9    move container to workspace $ws9
 bindsym $mod+Shift+0    exec ~/.config/sway/scripts/prompt.sh move_to
 
-# Switch the current container between different layout styles
+# layout styles
 bindsym $mod+s layout stacking
 bindsym $mod+e layout toggle split
 
-# Make the current focus fullscreen
-bindsym $mod+f fullscreen
-
-# Toggle the current focus between tiling and floating mode
-bindsym $mod+Shift+space floating toggle
-
-# Swap focus between the tiling area and the floating area
-bindsym $mod+space focus mode_toggle
-
-# move focus to the parent container
-bindsym $mod+a focus parent
-
-# Move the currently focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
+bindsym $mod+f fullscreen # fullscreen (duh)
+bindsym $mod+space floating toggle # float toggle
