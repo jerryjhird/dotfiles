@@ -1,0 +1,11 @@
+alias ls='ls -a --color=auto'
+alias reload='source ~/.${SHELL##*/}rc'
+alias snano='sudo nano'
+alias pirate='aria2c --seed-time 0'
+alias volume='pulsemixer'
+
+alias dnfclean='sudo dnf clean all && sudo dnf makecache --refresh'
+alias zypperclean='sudo zypper clean --all && sudo zypper refresh'
+
+alias debloat='rm -rf ~/Downloads/* && rm -rf ~/Pictures/*scrn*'
+alias prism='/opt/PrismLauncher.AppImage'
