@@ -100,6 +100,12 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# resize window using Mod1+Alt+Arrow
+bindsym $mod+Mod1+Left  resize shrink width 20px
+bindsym $mod+Mod1+Right resize grow   width 20px
+bindsym $mod+Mod1+Up    resize shrink height 20px
+bindsym $mod+Mod1+Down  resize grow   height 20px
+
 # switch to workspace
 bindsym $mod+1   workspace $ws1
 bindsym $mod+2   workspace $ws2
