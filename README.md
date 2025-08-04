@@ -37,11 +37,13 @@ $mod+PRINT // Screenshots whole screen
 
 $mod+SHIFT+PRINT // Screenshots region of the screen
 
-$mod+SHIFT+C // Reloads Sway Config and makes the scripts in the scripts folder executable and runs the wallpaper switcher (basically a fix keybind)
+$mod+SHIFT+C // Reloads Sway Config (buggy)
 
 $mod+{ARROW_DIRECTION} // Selects application to the specified direction of current selected application
 
 $mod+SHIFT+{ARROW_DIRECTION} // Moves current selected application to the specified direction
+
+$mod+ALT+{ARROW_DIRECTION} // resizes Window in arrow key direction
 
 ## Workspace Keybinds
 
