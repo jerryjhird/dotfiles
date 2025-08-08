@@ -104,13 +104,13 @@ a catgirl downloader script for downloading catgirl images (inspired by nyarch (
 
 to setup spotify get a valid oauth token for your account and replace `your_spotify_token` on the first line of .config/sway/config with your token
 
-(notes: 
+notes: { 
   
   do not include `Bearer {token}` only include the token part
   
   oauth tokens could expire meaning you will have to re-add your new token to the config
 
-)
+}
 
 ### Controls:
 
