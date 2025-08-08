@@ -108,7 +108,7 @@ notes: {
   
   do not include `Bearer {token}` only include the token part
   
-  oauth tokens could expire meaning you will have to re-add your new token to the config
+  oauth tokens expire every hour ):
 
   this does not replace spotify you will still need the spotify app / webplayer running
 
