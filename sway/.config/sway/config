@@ -1,4 +1,7 @@
 # Variables
+
+set $spotify_oauth_token your_spotify_token_here
+
 set $mod Mod4
 set $term foot
 
@@ -74,6 +77,11 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exit
 bindsym $mod+b splith
 bindsym $mod+v splitv
+
+# Spotify Controls
+bindsym $mod+equal exec ~/.config/sway/scripts/spotify_controls.sh $spotify_oauth_token next
+bindsym $mod+minus exec ~/.config/sway/scripts/spotify_controls.sh $spotify_oauth_token previous
+
 
 # Catgirl Downloader Utility
 bindsym $mod+c exec ~/.config/sway/scripts/catgirl_downloader.sh open_feh
