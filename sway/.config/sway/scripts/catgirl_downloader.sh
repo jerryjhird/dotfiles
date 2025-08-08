@@ -13,7 +13,7 @@ download_catgirl() {
   if [ ! -f "$filepath" ]; then
     curl -s "$url" -o "$filepath"
   fi
-  echo "catgirl has been summoned :3"
+  notify-send "Catgirl Daemon" "Catgirl summoned"
 }
 
 clear_cg_cache() {
