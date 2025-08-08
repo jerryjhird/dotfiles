@@ -81,7 +81,8 @@ bindsym $mod+v splitv
 # Spotify Controls
 bindsym $mod+equal exec ~/.config/sway/scripts/spotify_controls.sh $spotify_oauth_token next
 bindsym $mod+minus exec ~/.config/sway/scripts/spotify_controls.sh $spotify_oauth_token previous
-
+bindsym $mod+shift+minus exec ~/.config/sway/scripts/spotify_controls.sh $spotify_oauth_token pause
+bindsym $mod+shift+equal exec ~/.config/sway/scripts/spotify_controls.sh $spotify_oauth_token playpause
 
 # Catgirl Downloader Utility
 bindsym $mod+c exec ~/.config/sway/scripts/catgirl_downloader.sh open_feh
