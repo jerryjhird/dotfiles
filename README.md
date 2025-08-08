@@ -24,42 +24,42 @@ Spotify Controls (control spotify using keybinds)
 
 ## Standard Keybinds
 
-$mod+D // opens $menu (wofi with custom flags)
-$mod+Shift+D // opens wofi in run mode
+`$mod+D `// opens $menu (wofi with custom flags)
+`$mod+Shift+D` // opens wofi in run mode
 
-$mod+W // Changes wallpaper to the next wallpaper in the Pictures/Wallpaper Folder
+`$mod+W `// Changes wallpaper to the next wallpaper in the Pictures/Wallpaper Folder
 
-$mod+Return // Starts $term (foot)
+`$mod+Return` // Starts $term (foot)
 
-$mod+Q // Quits Selected Application
+`$mod+Q` // Quits Selected Application
 
-$mod+SHIFT+E // Quits Sway
+`$mod+SHIFT+E` // Quits Sway
 
-$mod+F // Fullscreens current selected application
+`$mod+F` // Fullscreens current selected application
 
-$mod+PRINT // Screenshots whole screen
+`$mod+PRINT` // Screenshots whole screen
 
-$mod+SHIFT+PRINT // Screenshots region of the screen
+`$mod+SHIFT+PRINT` // Screenshots region of the screen
 
-$mod+SHIFT+R // Reloads Sway Config
+`$mod+SHIFT+R` // Reloads Sway Config
 
-$mod+{ARROW_DIRECTION} // Selects application to the specified direction of current selected application
+`$mod+{ARROW_DIRECTION}` // Selects application to the specified direction of current selected application
 
-$mod+SHIFT+{ARROW_DIRECTION} // Moves current selected application to the specified direction
+`$mod+SHIFT+{ARROW_DIRECTION}` // Moves current selected application to the specified direction
 
-$mod+ALT+{ARROW_DIRECTION} // resizes Window in arrow key direction
+`$mod+ALT+{ARROW_DIRECTION}` // resizes Window in arrow key direction
 
 ## Workspace Keybinds
 
 " {NUMBER} represents any number from 1 to 9"
 
-$mod+{Number} // Switches to workspace {number}
+`$mod+{Number}` // Switches to workspace {number}
 
-$mod+SHIFT+{Number} // moves container to workspace {Number}
+`$mod+SHIFT+{Number}` // moves container to workspace {Number}
 
-$mod+0 // create / switch to workspace with custom name
+`$mod+0 // create` / switch to workspace with custom name
 
-$mod+SHIFT+0 // move window to workspace with custom name
+`$mod+SHIFT+0` // move window to workspace with custom name
 
 ## Wallpapers
 
@@ -116,6 +116,10 @@ notes: {
 
 ### Controls:
 
-Mod+Minus // switch to previous track
+`Mod+Minus` // switch to previous track
 
-Nod+Equal // switch to next track
+`Mod+Equal` // switch to next track
+
+`Mod+Shift+Minus` // pause track
+
+`Nod+Shift+Equal` // unpause track
