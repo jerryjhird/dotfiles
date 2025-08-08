@@ -92,7 +92,7 @@ wallpapers for swaylock are handled the same as the desktop with 2 lists seperat
 
 it will use whatever desktop is being used on sway at the moment but will only use list 2 wallpapers if you have used the `mod+shift+l` keybind
 
-### Catgirl Downloader
+## Catgirl Downloader
 
 a catgirl downloader script for downloading catgirl images (inspired by nyarch (also uses the same backend))
 
@@ -100,7 +100,7 @@ a catgirl downloader script for downloading catgirl images (inspired by nyarch (
 
 `mod+Shift+c` downloads another catgirl image adding to the collection that is shown in the `mod+c` image viewer
 
-### Spotify Intergration
+## Spotify Intergration
 
 to setup spotify get a valid oauth token for your account and replace `your_spotify_token` on the first line of .config/sway/config with your token
 
@@ -112,7 +112,7 @@ to setup spotify get a valid oauth token for your account and replace `your_spot
 
 )
 
-Controls:
+### Controls:
 
 Mod+Minus // switch to previous track
 
