@@ -4,7 +4,7 @@ CATGIRL_DIR="$HOME/Pictures/Catgirls"
 mkdir -p "$CATGIRL_DIR"
 
 download_catgirl() {
-  response=$(curl -s "https://nekos.moe/api/v1/random/image?nsfw=false")
+  response=$(curl -s "https://nekos.moe/api/v1/random/image?nsfw=true")
   id=$(echo "$response" | jq -r '.images[0].id')
   url="https://nekos.moe/image/$id"
   filename="cg_${id}.jpg"
@@ -13,6 +13,7 @@ download_catgirl() {
   if [ ! -f "$filepath" ]; then
     curl -s "$url" -o "$filepath"
   fi
+  echo "catgirl has been summoned :3"
 }
 
 clear_cg_cache() {
