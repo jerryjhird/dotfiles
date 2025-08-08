@@ -12,16 +12,6 @@ requirements:
 
 " $mod represents the variable in the sway config file, its set to super by default"
 
-## Included Scripts:
-
-Wallpaper cycler (cycles through wallpapers in the {~/Pictures/Wallpapers} folder) (must be .jpg or .jpeg)
-
-Workspace Prompt (allows the use of custom names or numbers for workspaces using zenity to prompt for them) (unlimited workspaces)
-
-Catgirl Downloader (downloads catgirls)
-
-Spotify Controls (control spotify using keybinds)
-
 ## Standard Keybinds
 
 `$mod+D `// opens $menu (wofi with custom flags)
