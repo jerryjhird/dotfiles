@@ -8,7 +8,7 @@ this happens when the scripts arent marked as executable and the wallpaper symli
 ![Screenshot](https://i.imgur.com/cJcNyCZ.png)
 
 requirements:
-[sway waybar rofi xwayland sddm fastfetch grim slurp, zenity mako]
+[sway waybar rofi xwayland sddm fastfetch grim slurp zenity mako jq]
 
 " $mod represents the variable in the sway config file, its set to super by default"
 
