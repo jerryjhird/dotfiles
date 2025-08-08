@@ -120,4 +120,4 @@ notes: {
 
 `Mod+Shift+Minus` // pause track
 
-`Mod+Shift+Equal` // unpause track
+`Mod+Shift+Equal` // toggle paused/unpaused track
