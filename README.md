@@ -102,16 +102,14 @@ a catgirl downloader script for downloading catgirl images (inspired by nyarch (
 
 ## Spotify Intergration
 
-to setup spotify get a valid oauth token for your account and replace `your_spotify_token` on the first line of .config/sway/config with your token
+to setup spotify make sure you have a discord account that is connected to your spotify account and put your discord token inside .config/sway/config at the  top of the file where it says `your_discord_token_here`
 
 notes: { 
-  
-  do not include `Bearer {token}` only include the token part
-  
-  oauth tokens expire every hour ):
 
   this does not replace spotify you will still need the spotify app / webplayer running
 
+  the reason it uses discord is to allow for token refreshing without having to use the annoying spotify developer application process
+  
 }
 
 ### Controls:
