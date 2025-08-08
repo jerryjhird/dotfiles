@@ -67,11 +67,16 @@ bindsym $mod+l exec ~/.config/sway/scripts/swaylock_wallpaper_handler.sh
 # use list 2 wallpapers if they are set already
 bindsym $mod+Shift+l exec ~/.config/sway/scripts/swaylock_wallpaper_handler.sh --unsafe
 
+# Basic keybinds
 bindsym $mod+q kill
-bindsym $mod+Shift+c exec bash -c 'chmod -R +x ~/.config/sway/scripts && ~/.config/sway/scripts/cycle_wallpaper.sh && swaymsg reload'
+bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exit
 bindsym $mod+b splith
 bindsym $mod+v splitv
+
+# Catgirl Downloader Utility
+bindsym $mod+c exec ~/.config/sway/scripts/catgirl_downloader.sh open_feh
+bindsym $mod+Shift+c exec ~/.config/sway/scripts/catgirl_downloader.sh summon_catgirl
 
 bindsym $mod+Escape exec $power
 bindsym $mod+End exec $wifi
