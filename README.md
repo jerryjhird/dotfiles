@@ -37,7 +37,7 @@ $mod+PRINT // Screenshots whole screen
 
 $mod+SHIFT+PRINT // Screenshots region of the screen
 
-$mod+SHIFT+C // Reloads Sway Config (buggy)
+$mod+SHIFT+R // Reloads Sway Config
 
 $mod+{ARROW_DIRECTION} // Selects application to the specified direction of current selected application
 
@@ -88,4 +88,10 @@ wallpapers for swaylock are handled the same as the desktop with 2 lists seperat
 
 it will use whatever desktop is being used on sway at the moment but will only use list 2 wallpapers if you have used the `mod+shift+l` keybind
 
+### Catgirl Downloader
 
+a catgirl downloader script for downloading catgirl images (inspired by nyarch (also uses the same backend))
+
+`mod+c` opens feh image viewer in the catgirl folder (use arrow keys to switch images)
+
+`mod+Shift+c` downloads another catgirl image adding to the collection that is shown in the `mod+c` image viewer
