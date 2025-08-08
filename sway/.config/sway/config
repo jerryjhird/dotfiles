@@ -16,6 +16,7 @@ set $cl_urge #ee2e24
 
 # Autostart
 exec waybar
+exec mako
 
 # Colors                border   bg       text     indi     childborder
 client.focused          $cl_high $cl_high $cl_fore $cl_indi $cl_high
