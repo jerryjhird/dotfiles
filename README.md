@@ -14,9 +14,13 @@ requirements:
 
 ## Included Scripts:
 
-Wallpaper cycler (cycles through wallpapers in the {~/Pictures/Wallpapers} folder)    (must be .jpg or .jpeg)
+Wallpaper cycler (cycles through wallpapers in the {~/Pictures/Wallpapers} folder) (must be .jpg or .jpeg)
 
 Workspace Prompt (allows the use of custom names or numbers for workspaces using zenity to prompt for them) (unlimited workspaces)
+
+Catgirl Downloader (downloads catgirls)
+
+Spotify Controls (control spotify using keybinds)
 
 ## Standard Keybinds
 
@@ -95,3 +99,21 @@ a catgirl downloader script for downloading catgirl images (inspired by nyarch (
 `mod+c` opens feh image viewer in the catgirl folder (use arrow keys to switch images)
 
 `mod+Shift+c` downloads another catgirl image adding to the collection that is shown in the `mod+c` image viewer
+
+### Spotify Intergration
+
+to setup spotify get a valid oauth token for your account and replace `your_spotify_token` on the first line of .config/sway/config with your token
+
+(notes: 
+  
+  do not include `Bearer {token}` only include the token part
+  
+  oauth tokens could expire meaning you will have to re-add your new token to the config
+
+)
+
+Controls:
+
+Mod+Minus // switch to previous track
+
+Nod+Equal // switch to next track
