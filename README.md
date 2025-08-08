@@ -110,6 +110,8 @@ notes: {
   
   oauth tokens could expire meaning you will have to re-add your new token to the config
 
+  this does not replace spotify you will still need the spotify app / webplayer running
+
 }
 
 ### Controls:
