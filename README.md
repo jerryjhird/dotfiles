@@ -1,7 +1,7 @@
 # Sway Dotfiles
 
 > [!TIP]
-> if the wallpaper, mod+*+w or mod+*+0 arent working after install. try using chmod +x on all files in the .config/sway/scripts folder and ensure that your wallpaper(s) are placed in the correct dir [Info here](https://github.com/Jerryslang/dotfiles#Wallpapers)
+> if the wallpaper, mod+w or mod+0 arent working after install. try using chmod +x on all files in the .config/sway/scripts folder and ensure that your wallpaper(s) are placed in the correct dir [Info here](https://github.com/Jerryslang/dotfiles#Wallpapers)
 
 this happens when the scripts arent marked as executable and the wallpaper symlink hasnt been created yet
 
