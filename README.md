@@ -96,9 +96,9 @@ a catgirl downloader script for downloading catgirl images (inspired by nyarch (
 
 `mod+Shift+c` downloads another catgirl image adding to the collection that is shown in the `mod+c` image viewer
 
-## Spotify/Music player Intergration
+## Music Player Intergration
 
-uses playerctl for backend
+uses playerctl for backend (works with spotify (this is all i care about))
 
 ### Controls:
 
