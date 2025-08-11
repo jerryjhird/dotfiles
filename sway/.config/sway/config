@@ -1,7 +1,5 @@
 # Variables
 
-set $discord_token your_discord_token_here
-
 set $mod Mod4
 set $term foot
 
@@ -79,10 +77,10 @@ bindsym $mod+b splith
 bindsym $mod+v splitv
 
 # Spotify Controls
-bindsym $mod+equal exec ~/.config/sway/scripts/spotify_controls.sh $discord_token next
-bindsym $mod+minus exec ~/.config/sway/scripts/spotify_controls.sh $discord_token previous
-bindsym $mod+shift+minus exec ~/.config/sway/scripts/spotify_controls.sh $discord_token pause
-bindsym $mod+shift+equal exec ~/.config/sway/scripts/spotify_controls.sh $discord_token playpause
+bindsym $mod+equal exec ~/.config/sway/scripts/music_controls.sh next
+bindsym $mod+minus exec ~/.config/sway/scripts/music_controls.sh previous
+bindsym $mod+shift+minus exec ~/.config/sway/scripts/music_controls.sh pause
+bindsym $mod+shift+equal exec ~/.config/sway/scripts/music_controls.sh playpause
 
 # Catgirl Downloader Utility
 bindsym $mod+c exec ~/.config/sway/scripts/catgirl_downloader.sh open_feh
