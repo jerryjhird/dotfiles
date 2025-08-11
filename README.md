@@ -90,9 +90,9 @@ a catgirl downloader script for downloading catgirl images (inspired by nyarch (
 
 `mod+Shift+c` downloads another catgirl image adding to the collection that is shown in the `mod+c` image viewer
 
-## Spotify Intergration
+## Spotify/Music player Intergration
 
-to setup spotify make sure you have a discord account that is connected to your spotify account and put your discord token inside .config/sway/config at the  top of the file where it says `your_discord_token_here`
+uses playerctl for backend
 
 ### Controls:
 
