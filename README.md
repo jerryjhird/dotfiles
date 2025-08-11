@@ -5,7 +5,7 @@
 
 this happens when the scripts arent marked as executable and the wallpaper symlink hasnt been created yet
 
-![Screenshot](https://i.imgur.com/cJcNyCZ.png)
+![Screenshot](https://i.imgur.com/3GdSP5n.png)
 
 requirements:
 [waybar rofi xwayland fastfetch grim slurp zenity mako jq playerctl]
