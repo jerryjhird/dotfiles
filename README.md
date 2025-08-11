@@ -103,9 +103,3 @@ uses playerctl for backend
 `Mod+Shift+Minus` // pause track
 
 `Mod+Shift+Equal` // toggle paused/unpaused track
-
-### Notes
-
-this does not replace spotify you will still need the spotify app / webplayer running
-
-the reason it uses discord is to allow for token refreshing without having to use the annoying spotify developer application process
