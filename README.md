@@ -51,6 +51,12 @@ requirements:
 
 `$mod+SHIFT+0` // move window to workspace with custom name
 
+## Notifications
+
+these dotfiles currently use Mako for there notification daemon
+
+`Control+Space` to dismiss all notifications
+
 ## Wallpapers
 
 wallpapers are handled by a custom script wich allows you to place any wallpaper you want at anytime inside of the ~/Pictures/Wallpapers folder and cycle through them using a keybind
