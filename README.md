@@ -26,6 +26,8 @@ and to run just enter:
 bash installer.bash
 ```
 
+(note that the installer does not install/provide any of the dependencies listed in the requirements list above you will need to install these preferable through your distro's package manager)
+
 ## Standard Keybinds
 
 `$mod+D `// opens $menu (wofi with custom flags)
