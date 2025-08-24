@@ -12,6 +12,15 @@ requirements:
 
 " $mod represents the variable in the sway config file, its set to super by default"
 
+## Installation
+
+a installer script is now provided
+
+you can run it by entering this in your terminal (it requires curl, bash, git)
+```
+curl -fsSL https://raw.githubusercontent.com/Jerryslang/dotfiles/refs/heads/main/installer.bash | bash
+```
+
 ## Standard Keybinds
 
 `$mod+D `// opens $menu (wofi with custom flags)
