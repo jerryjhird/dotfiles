@@ -16,9 +16,14 @@ requirements:
 
 a installer script is now provided
 
-you can run it by entering this in your terminal (it requires curl, bash, git)
+you can download it by entering this in your terminal (installer requires curl, git)
 ```
-curl -fsSL https://raw.githubusercontent.com/Jerryslang/dotfiles/refs/heads/main/installer.bash | bash
+curl -fsSL https://raw.githubusercontent.com/Jerryslang/dotfiles/refs/heads/main/installer.bash -o installer.bash
+```
+
+and to run just enter:
+```
+bash installer.bash
 ```
 
 ## Standard Keybinds
