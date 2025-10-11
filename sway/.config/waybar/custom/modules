@@ -1,6 +1,0 @@
-{
-  "custom/launcher": {
-    "format": "⚇",
-    "on-click": "wofi --show run"
-  }
-}
