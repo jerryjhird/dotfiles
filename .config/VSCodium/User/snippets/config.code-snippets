@@ -1,6 +1,6 @@
 {
-  "C header": {
-    "prefix": "c_header",
+  "Template::C-header": {
+    "prefix": "template_c_header",
     "body": [
       "#ifndef ${TM_FILENAME_BASE/(.*)/${1:/upcase}_H/}",
       "#define ${TM_FILENAME_BASE/(.*)/${1:/upcase}_H/}",
@@ -18,5 +18,41 @@
       "#endif // ${TM_FILENAME_BASE/(.*)/${1:/upcase}_H/}"
     ],
     "description": "template for C headers"
+  },
+  "Template::Meson.build": {
+    "prefix": "template_meson",
+    "body": [
+      "project('${1:app}', 'c',",
+      "  version: '${2:0.1}',",
+      "  default_options: [",
+      "    'warning_level=${3:3}',",
+      "    'c_std=${4:c11}',",
+      "    'optimization=${5:2}'",
+      "  ]",
+      ")",
+      "",
+      "ncurses_dep = dependency('ncurses', required: true)",
+      "",
+      "incdir = include_directories('${6:include}')",
+      "",
+      "executable('${1:app}',",
+      "  sources: ['${7:src/main.c}'],",
+      "  include_directories: incdir,",
+      "  dependencies: [ncurses_dep],",
+      "  install: true",
+      ")"
+    ],
+    "description": "template for Meson Build"
+  },
+  "Template::Build.sh": {
+    "prefix": "template_build",
+    "body": [
+      "#!/bin/bash",
+      "",
+      "meson setup build --prefix=$$PWD/dist",
+      "meson compile -C build",
+      "meson install -C build"
+    ],
+    "description": "template for Meson build script"
   }
 }
