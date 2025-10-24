@@ -44,7 +44,7 @@
     ],
     "description": "template for Meson Build"
   },
-  "Template::Build.sh": {
+  "Template::Meson::Build.sh": {
     "prefix": "template_build",
     "body": [
       "#!/bin/bash",
@@ -54,5 +54,35 @@
       "meson install -C build"
     ],
     "description": "template for Meson build script"
-  }
+  },
+  "Template::Xmake.lua": {
+    "prefix": "template_xmake",
+    "body": [
+      "set_project('${1:game}')",
+      "set_version('${2:1.0}')",
+      "",
+      "set_defaultmode('${3:release}')",
+      "add_rules('mode.debug', 'mode.release')",
+      "",
+      "add_requires('raylib', {system = true})",
+      "",
+      "target('${1:game}')",
+      "    set_kind('binary')",
+      "    add_includedirs('${4:include}')",
+      "    add_files('${5:src/*.c}', {rootdir = '${6:.}'})",
+      "    add_packages('raylib')",
+      "",
+      "    if is_mode('debug') then",
+      "        add_defines('DEBUG')",
+      "        set_symbols('debug')",
+      "        set_optimize('none')",
+      "    end",
+      "",
+      "    if is_mode('release') then",
+      "        set_symbols('hidden')",
+      "        set_optimize('fast') -- optimization",
+      "    end"
+    ],
+    "description": "template for Xmake Build script"
+  }  
 }
