@@ -37,27 +37,27 @@ gitconf() {
   local CODEBERG
   local GITHUB
 
-  local USER="${GIT_USERNAME:-nouser}"
+  local USER="${GIT_USERNAME:-jerryjhird}"
 
   if [ "$PROTO" = "ssh" ]; then
-    DISROOT="git@$USER:git.disroot.org:${REPO}.git"
-    CODEBERG="git@$USER:codeberg.org:${REPO}.git"
-    GITHUB="git@$USER:github.com:${REPO}.git"
+    DISROOT="git@git.disroot.org:${USER}/${REPO}.git"
+    CODEBERG="git@codeberg.org:${USER}/${REPO}.git"
+    GITHUB="git@github.com:${USER}/${REPO}.git"
   elif [ "$PROTO" = "https" ]; then
-    DISROOT="https://$USER@git.disroot.org/${REPO}.git"
-    CODEBERG="https://$USER@codeberg.org/${REPO}.git"
-    GITHUB="https://$USER@github.com/${REPO}.git"
+    DISROOT="https://$USER@git.disroot.org/${USER}/${REPO}.git"
+    CODEBERG="https://$USER@codeberg.org/${USER}/${REPO}.git"
+    GITHUB="https://$USER@github.com/${USER}/${REPO}.git"
   else
     echo "protocol must be 'ssh' or 'https'"
     return 1
   fi
 
   git remote remove origin
-  git remote add origin "$DISROOT"
+  git remote add origin "$GITHUB"
 
+  git remote set-url --add --push origin "$GITHUB"
   git remote set-url --add --push origin "$CODEBERG"
   git remote set-url --add --push origin "$DISROOT"
-  git remote set-url --add --push origin "$GITHUB"
 
   git remote -v
 }
